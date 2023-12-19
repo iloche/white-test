@@ -13,6 +13,8 @@ header{
     align-items: center;
     width: 90%;
     height: 100px;
+    z-index: 1;
+    box-shadow: 0px 20px 49px rgba(0,0,0,0.17);
     .header-logo{
         margin-left: 30px;
         display: flex;
@@ -54,6 +56,51 @@ header{
         }
     }
 }
+.header-burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 80px;
+    right: 55px;
+    cursor: pointer;
+    z-index: 1;
+    &:hover div{
+        background-color: $yellowcolor;
+        }
+    div{
+        @include transition;
+        background-color: $greycolor;
+        height: 3px;
+        width: 60%;
+    }
+    div:nth-of-type(2){
+         margin: 5px 0;
+    }
+}
+.header-home{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    translate: -50%;
+    .middle-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        h1{
+            font-size: 48px;
+            color: white;
+            font-weight: normal;
+        }
+        span{
+            background-color: $yellowcolor;
+            padding: 10px;
+        }
+    }
+}
 @media screen and (min-width: 990px) {
     .fixed-header{
         .header-nav{
@@ -63,5 +110,8 @@ header{
             display: flex;
             justify-content: center;
         }
+    }
+    .header-burger{
+        display: none;
     }
 }
