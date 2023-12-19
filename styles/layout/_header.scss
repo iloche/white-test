@@ -1,6 +1,14 @@
-header{
+.homepage{
     background-image: url(../images/slider_background.jpg);
     height: 100vh;
+}
+.courses-page{
+    background-image: url(../../images/courses_background.jpg);
+    height: 50vh;
+}
+.contact-page{
+    background-image: url(../images/contact_background.jpg);
+    height: 50vh;
 }
 .fixed-header{
     background-color: rgb(255, 255, 255);
@@ -106,12 +114,16 @@ header{
         .header-nav{
             display: flex;
         }
-        .header-phone{
-            display: flex;
-            justify-content: center;
-        }
     }
     .header-burger{
         display: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .fixed-header{
+        .header-phone{
+        display: flex;
+        justify-content: center;
+        }
     }
 }

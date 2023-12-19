@@ -8,19 +8,19 @@
     <title>Exercice n° - </title>
 </head>
 <body>
-    <header>
+    <header class="homepage">
         <div class="fixed-header">
             <div class="header-logo">
                 <img src="images/logo.png" alt="Logo">
                 <span>Course</span>
             </div>
             <nav class="header-nav">
-                <a href="#">Home</a>
+                <a href="home.html">Home</a>
                 <a href="#">About us</a>
-                <a href="#">Courses</a>
+                <a href="courses.html">Courses</a>
                 <a href="#">Elements</a>
                 <a href="#">News</a>
-                <a href="#">Contact</a>
+                <a href="contact.html">Contact</a>
             </nav>
             <div class="header-phone">
                 <img src="images/phone-call.svg" alt="">
@@ -136,7 +136,7 @@
                     <input type="text" placeholder="Course Name">
                     <input type="text" placeholder="Category">
                     <input type="text" placeholder="Degree">
-                    <a href="#">Search course</a>
+                    <a href="#" class="yellow-button">Search course</a>
                 </div>
             </div>
         </section>
@@ -190,29 +190,34 @@
                 </article>
             </div>
         </section>
-        <section>
-            <div class="title">
-                <hr>
-                <h3>What our students say</h3>
-            </div>
-            <span>″</span>
-            <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
-            <div class="student-testi">
-                <img src="images/testimonials_user.jpg" alt="James Cooper">
-                <h4>James Cooper</h4>
-                <small>Graduate Student</small>
+        <section class="main-student">
+            <div class="wrapper">
+                <div class="title">
+                    <hr>
+                    <h3>What our students say</h3>
+                </div>
+                <div class="student-testi">
+                    <span>“</span>
+                    <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum.</p>
+                </div>
+                <div class="student-info">
+                    <img src="images/testimonials_user.jpg" alt="James Cooper">
+                    <h4>James Cooper</h4>
+                    <small>Graduate Student</small>
+                </div>
             </div>
         </section>
-        <section>
+        <section class="main-event wrapper">
             <div class="title">
                 <hr>
                 <h3>Upcoming Events</h3>
             </div>
             <article>
                 <div class="event">
+                    <img src="images/event_1.jpg" alt="">
                     <div class="event-date">
                         <span>07</span>
-                        <span>January</span>
+                        <span class="month">January</span>
                     </div>
                     <div class="event-description">
                         <div class="event-txt">
@@ -221,16 +226,14 @@
                             <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor</p>
                         </div>
                     </div>
-                    <div class="event-img">
-                        <img src="images/event_1.jpg" alt="">
-                    </div>
                 </div>
             </article>
             <article>
                 <div class="event">
+                    <img src="images/event_2.jpg" alt="">
                     <div class="event-date">
                         <span>07</span>
-                        <span>January</span>
+                        <span class="month">January</span>
                     </div>
                     <div class="event-description">
                         <div class="event-txt">
@@ -239,16 +242,14 @@
                             <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor</p>
                         </div>
                     </div>
-                    <div class="event-img">
-                        <img src="images/event_2.jpg" alt="">
-                    </div>
                 </div>
             </article>
             <article>
                 <div class="event">
+                    <img src="images/event_3.jpg" alt="">
                     <div class="event-date">
                         <span>07</span>
-                        <span>January</span>
+                        <span class="month">January</span>
                     </div>
                     <div class="event-description">
                         <div class="event-txt">
@@ -257,68 +258,69 @@
                             <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor</p>
                         </div>
                     </div>
-                    <div class="event-img">
-                        <img src="images/event_3.jpg" alt="">
-                    </div>
                 </div>
             </article>
         </section>
     </main>
     <footer>
-        <div class="newsletter">
-            <div class="title">
-                <hr>
-                <h3>Subscribe to newsletter</h3>
-            </div>
-            <div class="newsletter-box">
-                <input type="text" placeholder="Email Address">
-                <a href="#">Subscribe</a>
-            </div>
-        </div>
-        <hr>
-        <div class="footer-nav">
-            <div class="footer-logo">
-                <img src="images/logo.png" alt="Logo">
-                <span>Course</span>
-                <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum, tempor lacus.</p>
-            </div>
-            <div class="footer-title">
-                <h2>Menu</h2>
-                <div class="footer-subtitle">
-                    <a href="#">Home</a>
-                    <a href="#">About Us</a>
-                    <a href="#">Courses</a>
-                    <a href="#">News</a>
-                    <a href="#">Contact</a>
+        <div class="wrapper">
+            <div class="newsletter">
+                <div class="title">
+                    <hr>
+                    <h3>Subscribe to newsletter</h3>
                 </div>
-            </div>
-            <div class="footer-title">
-                <h2>Usefull Links</h2>
-                <div class="footer-subtitle">
-                    <a href="#">Testimonials</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Community</a>
-                    <a href="#">Campus Pictures</a>
-                    <a href="#">Tuitions</a>
-                </div>
-            </div>
-            <div class="footer-title">
-                <h2>Contact</h2>
-                <div class="footer-subtitle">
-                    <a href="#"><img src="images/placeholder.svg" alt="">Blvd Libertad, 34 m05200 Arévalo</a>
-                    <a href="#"><img src="images/smartphone.svg" alt=""> 0034 37483 2445 322</a>
-                    <a href="#"><img src="images/envelope.svg" alt="">hello@company.com</a>
+                <div class="newsletter-box">
+                    <input type="text" placeholder="Email Address">
+                    <a href="#">Subscribe</a>
                 </div>
             </div>
             <hr>
-        </div>
-        <div class="footer-credits">
-            <small>Copyright ©2023 All rights reserved | This template is made with ♥ by Colorlib</small>
-            <a href="#"><i class="fa-brands fa-pinterest" style="color: #ffffff;"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+            <div class="footer-nav">
+                <div class="footer-logo">
+                    <div class="logo-content">
+                        <img src="images/logo.png" alt="Logo">
+                        <span>Course</span>
+                    </div>
+                    <p>In aliquam, augue a gravida rutrum, ante nisl fermentum nulla, vitae tempor nisl ligula vel nunc. Proin quis mi malesuada, finibus tortor fermentum, tempor lacus.</p>
+                </div>
+                <div class="footer-title">
+                    <h2>Menu</h2>
+                    <div class="footer-subtitle">
+                        <a href="#">Home</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Courses</a>
+                        <a href="#">News</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-title">
+                    <h2>Usefull Links</h2>
+                    <div class="footer-subtitle">
+                        <a href="#">Testimonials</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Community</a>
+                        <a href="#">Campus Pictures</a>
+                        <a href="#">Tuitions</a>
+                    </div>
+                </div>
+                <div class="footer-title">
+                    <h2>Contact</h2>
+                    <div class="footer-subtitle">
+                        <a href="#"><img src="images/placeholder.svg" alt="">Blvd Libertad, 34 m05200 Arévalo</a>
+                        <a href="#"><img src="images/smartphone.svg" alt=""> 0034 37483 2445 322</a>
+                        <a href="#"><img src="images/envelope.svg" alt="">hello@company.com</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-credits">
+                <small>Copyright ©2023 All rights reserved | This template is made with ♥ by <a href="">Colorlib</a></small>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
 </body>
